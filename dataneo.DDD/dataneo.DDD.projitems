@@ -9,5 +9,17 @@
     <Import_RootNamespace>dataneo.DDD</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Common\BaseEntity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Common\ValueObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IAggregateRoot.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IAsyncRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Specification\AndSpecification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Specification\GenericSpecification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Specification\IdentitySpecification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Specification\NotSpecification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Specification\OrSpecification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Specification\Specification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Specification\Validation\Rule.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Specification\Validation\SpecValidator.cs" />
   </ItemGroup>
 </Project>
