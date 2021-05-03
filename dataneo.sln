@@ -3,18 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5C2D457D-9B1F-45CB-8D96-DF838FE76D87}"
-EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "dataneo.DDD", "dataneo.DDD\dataneo.DDD.shproj", "{97D2DC3B-ADF6-4A14-ACBA-B3E4027B6307}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "dataneo.Extensions", "dataneo.Extension\dataneo.Extensions.shproj", "{75335CB5-49E9-4697-9D01-CF09F5CCCBAC}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "dataneo.Extensions", "dataneo.Extensions\dataneo.Extensions.shproj", "{75335CB5-49E9-4697-9D01-CF09F5CCCBAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataneo.Extension", "Tests\dataneo.Extension\dataneo.Extension.csproj", "{638273B3-25CB-426D-AEF5-AB6EB8D3FFD1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.ExtensionsTest", "Tests\dataneo.ExtensionsTest\dataneo.ExtensionsTest.csproj", "{7B811A0A-288E-4929-9A6F-8ECF4718ADA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataneo.DDDTests", "Tests\dataneo.DDDTests\dataneo.DDDTests.csproj", "{71148870-FE5A-4813-B7BA-7915AAE21E34}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		dataneo.Extension\dataneo.Extension.projitems*{638273b3-25cb-426d-aef5-ab6eb8d3ffd1}*SharedItemsImports = 5
-		dataneo.Extension\dataneo.Extension.projitems*{75335cb5-49e9-4697-9d01-cf09f5cccbac}*SharedItemsImports = 13
+		dataneo.Extensions\dataneo.Extensions.projitems*{75335cb5-49e9-4697-9d01-cf09f5cccbac}*SharedItemsImports = 13
 		dataneo.DDD\dataneo.DDD.projitems*{97d2dc3b-adf6-4a14-acba-b3e4027b6307}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,16 +23,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{638273B3-25CB-426D-AEF5-AB6EB8D3FFD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{638273B3-25CB-426D-AEF5-AB6EB8D3FFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{638273B3-25CB-426D-AEF5-AB6EB8D3FFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{638273B3-25CB-426D-AEF5-AB6EB8D3FFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B811A0A-288E-4929-9A6F-8ECF4718ADA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B811A0A-288E-4929-9A6F-8ECF4718ADA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B811A0A-288E-4929-9A6F-8ECF4718ADA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B811A0A-288E-4929-9A6F-8ECF4718ADA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71148870-FE5A-4813-B7BA-7915AAE21E34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71148870-FE5A-4813-B7BA-7915AAE21E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71148870-FE5A-4813-B7BA-7915AAE21E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71148870-FE5A-4813-B7BA-7915AAE21E34}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{638273B3-25CB-426D-AEF5-AB6EB8D3FFD1} = {5C2D457D-9B1F-45CB-8D96-DF838FE76D87}
+		{7B811A0A-288E-4929-9A6F-8ECF4718ADA6} = {34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}
+		{71148870-FE5A-4813-B7BA-7915AAE21E34} = {34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F13A8756-E122-4822-8226-37CE674C6D80}
