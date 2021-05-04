@@ -9,6 +9,7 @@
     <Import_RootNamespace>dataneo.Extensions</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)IEnumerableExtensionToArray.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)IEnumerableExtension.cs" />
   </ItemGroup>
 </Project>
