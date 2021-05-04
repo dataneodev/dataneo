@@ -1,17 +1,24 @@
 ﻿using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Jobs;
 using dataneo.Extensions;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace dataneo.Extensions.Benchmarks
 {
+    [SimpleJob(RuntimeMoniker.Net48, baseline: true)]
+    [SimpleJob(RuntimeMoniker.NetCoreApp31)]
+    [SimpleJob(RuntimeMoniker.NetCoreApp50)]
     [MemoryDiagnoser]
     public class ToArrayBechmark
     {
-        [Params(100000)]
+        private static int[] _arr = GetCountInt(100000).ToArray();
+        //[Params(100000)]
         public int Count { get; set; }
 
-        public IEnumerable<int> Items => GetCountInt(Count);
+        public IEnumerable<int> Items => _arr
+                                        .Where(w => w > 1)
+                                        .Select(s => s);
 
         [Benchmark]
         public void ToListTest() => Items.ToList();
@@ -24,7 +31,7 @@ namespace dataneo.Extensions.Benchmarks
         [Benchmark]
         public void ToArrayWithPredictedCapacityTest() => Items.ToArray(Count);
 
-        private IEnumerable<int> GetCountInt(int count)
+        private static IEnumerable<int> GetCountInt(int count)
         {
             for (int i = 0; i < count; i++)
             {

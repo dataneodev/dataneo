@@ -13,6 +13,11 @@ namespace dataneo.Extensions
             if (predictedCapacity < 0)
                 throw new ArgumentOutOfRangeException("predictedCapacity < 0");
 
+            if (enumerable is ICollection<T> collection)
+            {
+                predictedCapacity = collection.Count;
+            }
+
             var returnList = new List<T>(predictedCapacity);
             returnList.AddRange(enumerable);
 
