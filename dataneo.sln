@@ -22,6 +22,7 @@ Global
 		dataneo.Extensions\dataneo.Extensions.projitems*{662264fa-0dc7-4728-a710-ab52c6c66258}*SharedItemsImports = 5
 		dataneo.Extensions\dataneo.Extensions.projitems*{75335cb5-49e9-4697-9d01-cf09f5cccbac}*SharedItemsImports = 13
 		dataneo.Extensions\dataneo.Extensions.projitems*{7b811a0a-288e-4929-9a6f-8ecf4718ada6}*SharedItemsImports = 5
+		dataneo.SharedKernel\dataneo.SharedKernel.projitems*{97d2dc3b-adf6-4a14-acba-b3e4027b6307}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
