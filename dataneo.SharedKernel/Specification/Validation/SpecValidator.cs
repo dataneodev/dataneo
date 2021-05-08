@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using FluentValidation.Results;
+﻿using FluentValidation.Results;
+using System.Collections.Generic;
 
-namespace dataneo.DDD
+namespace dataneo.SharedKernel
 {
     public class SpecValidator<T>
     {

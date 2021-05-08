@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace dataneo.DDD
+namespace dataneo.SharedKernel
 {
     public abstract class BaseEntity
     {

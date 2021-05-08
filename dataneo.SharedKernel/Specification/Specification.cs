@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace dataneo.DDD
+namespace dataneo.SharedKernel
 {
     public abstract class Specification<T>
     {

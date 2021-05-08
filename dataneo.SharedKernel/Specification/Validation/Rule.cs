@@ -1,5 +1,5 @@
 ﻿
-namespace dataneo.DDD
+namespace dataneo.SharedKernel
 {
     public class Rule<T>
     {

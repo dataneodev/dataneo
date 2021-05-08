@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace dataneo.DDD
+namespace dataneo.SharedKernel
 {
     internal sealed class NotSpecification<T> : Specification<T>
     {

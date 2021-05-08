@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "dataneo.DDD", "dataneo.DDD\dataneo.DDD.shproj", "{97D2DC3B-ADF6-4A14-ACBA-B3E4027B6307}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "dataneo.SharedKernel", "dataneo.SharedKernel\dataneo.SharedKernel.shproj", "{97D2DC3B-ADF6-4A14-ACBA-B3E4027B6307}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "dataneo.Extensions", "dataneo.Extensions\dataneo.Extensions.shproj", "{75335CB5-49E9-4697-9D01-CF09F5CCCBAC}"
 EndProject
@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{34BF79CC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.ExtensionsTest", "Tests\dataneo.ExtensionsTest\dataneo.ExtensionsTest.csproj", "{7B811A0A-288E-4929-9A6F-8ECF4718ADA6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.DDDTests", "Tests\dataneo.DDDTests\dataneo.DDDTests.csproj", "{71148870-FE5A-4813-B7BA-7915AAE21E34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.SharedKernelTests", "Tests\dataneo.SharedKernelTests\dataneo.SharedKernelTests.csproj", "{71148870-FE5A-4813-B7BA-7915AAE21E34}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{59BE2D38-86A3-4B81-8E84-46CCCBF9885C}"
 EndProject
@@ -22,7 +22,6 @@ Global
 		dataneo.Extensions\dataneo.Extensions.projitems*{662264fa-0dc7-4728-a710-ab52c6c66258}*SharedItemsImports = 5
 		dataneo.Extensions\dataneo.Extensions.projitems*{75335cb5-49e9-4697-9d01-cf09f5cccbac}*SharedItemsImports = 13
 		dataneo.Extensions\dataneo.Extensions.projitems*{7b811a0a-288e-4929-9a6f-8ecf4718ada6}*SharedItemsImports = 5
-		dataneo.DDD\dataneo.DDD.projitems*{97d2dc3b-adf6-4a14-acba-b3e4027b6307}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

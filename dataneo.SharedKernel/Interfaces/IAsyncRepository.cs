@@ -3,7 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 
-namespace dataneo.DDD
+namespace dataneo.SharedKernel
 {
     public interface IAsyncRepository<T> where T : BaseEntity, IAggregateRoot
     {

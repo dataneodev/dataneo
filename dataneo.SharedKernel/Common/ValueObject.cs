@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace dataneo.DDD
+namespace dataneo.SharedKernel
 {
     //https://enterprisecraftsmanship.com/posts/value-object-better-implementation/
     public abstract class ValueObject

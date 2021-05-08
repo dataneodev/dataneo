@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace dataneo.DDD
+namespace dataneo.SharedKernel
 {
     internal sealed class IdentitySpecification<T> : Specification<T>
     {

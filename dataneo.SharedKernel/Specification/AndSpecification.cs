@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace dataneo.DDD
+namespace dataneo.SharedKernel
 {
-    internal sealed class OrSpecification<T> : Specification<T>
+    internal sealed class AndSpecification<T> : Specification<T>
     {
         private readonly Specification<T> _left;
         private readonly Specification<T> _right;
 
-        public OrSpecification(Specification<T> left, Specification<T> right)
+        public AndSpecification(Specification<T> left, Specification<T> right)
         {
             _right = right;
             _left = left;
@@ -21,7 +21,7 @@ namespace dataneo.DDD
 
             var invokedExpression = Expression.Invoke(rightExpression, leftExpression.Parameters);
 
-            return (Expression<Func<T, bool>>)Expression.Lambda(Expression.OrElse(leftExpression.Body, invokedExpression), leftExpression.Parameters);
+            return (Expression<Func<T, bool>>)Expression.Lambda(Expression.AndAlso(leftExpression.Body, invokedExpression), leftExpression.Parameters);
         }
     }
 }

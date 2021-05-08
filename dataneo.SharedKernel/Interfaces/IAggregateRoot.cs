@@ -1,4 +1,4 @@
-﻿namespace dataneo.DDD
+﻿namespace dataneo.SharedKernel
 {
     public interface IAggregateRoot
     { }
