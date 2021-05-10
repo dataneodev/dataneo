@@ -17,12 +17,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.Extensions.Benchmarks", "Benchmarks\dataneo.Extensions.Benchmarks\dataneo.Extensions.Benchmarks.csproj", "{662264FA-0DC7-4728-A710-AB52C6C66258}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "dataneo.Helpers", "dataneo.Helpers\dataneo.Helpers.shproj", "{4DF445D2-6956-49C7-9B3A-4E7BEC477AB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataneo.HelpersTests", "Tests\dataneo.HelpersTests\dataneo.HelpersTests.csproj", "{E03150AF-7EFD-416F-86D3-5CB705AF19D8}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		dataneo.Helpers\dataneo.Helpers.projitems*{4df445d2-6956-49c7-9b3a-4e7bec477ab5}*SharedItemsImports = 13
 		dataneo.Extensions\dataneo.Extensions.projitems*{662264fa-0dc7-4728-a710-ab52c6c66258}*SharedItemsImports = 5
 		dataneo.Extensions\dataneo.Extensions.projitems*{75335cb5-49e9-4697-9d01-cf09f5cccbac}*SharedItemsImports = 13
 		dataneo.Extensions\dataneo.Extensions.projitems*{7b811a0a-288e-4929-9a6f-8ecf4718ada6}*SharedItemsImports = 5
 		dataneo.SharedKernel\dataneo.SharedKernel.projitems*{97d2dc3b-adf6-4a14-acba-b3e4027b6307}*SharedItemsImports = 13
+		dataneo.Helpers\dataneo.Helpers.projitems*{e03150af-7efd-416f-86d3-5cb705af19d8}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +47,10 @@ Global
 		{662264FA-0DC7-4728-A710-AB52C6C66258}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{662264FA-0DC7-4728-A710-AB52C6C66258}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{662264FA-0DC7-4728-A710-AB52C6C66258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03150AF-7EFD-416F-86D3-5CB705AF19D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03150AF-7EFD-416F-86D3-5CB705AF19D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03150AF-7EFD-416F-86D3-5CB705AF19D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03150AF-7EFD-416F-86D3-5CB705AF19D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +59,7 @@ Global
 		{7B811A0A-288E-4929-9A6F-8ECF4718ADA6} = {34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}
 		{71148870-FE5A-4813-B7BA-7915AAE21E34} = {34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}
 		{662264FA-0DC7-4728-A710-AB52C6C66258} = {59BE2D38-86A3-4B81-8E84-46CCCBF9885C}
+		{E03150AF-7EFD-416F-86D3-5CB705AF19D8} = {34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F13A8756-E122-4822-8226-37CE674C6D80}
