@@ -12,9 +12,9 @@ namespace dataneo.Helpers
             new Dictionary<string, ObjectCreatorDelegate>(StringComparer.InvariantCulture);
 
         /// <summary>
-        /// Create instance of a object
+        /// Create instance of a object. 5 times slower than compiled code and 17 faster than Activator class
         /// </summary>
-        /// <typeparam name="CType"></typeparam>
+        /// <typeparam name="CType">Returned instance of a object</typeparam>
         /// <param name="typeName">full path namespace to object System.Text.StringBuilder</param>
         /// <returns></returns>
         public static Result<CType> CreateInstance<CType>(string typeName) where CType : class
@@ -40,9 +40,10 @@ namespace dataneo.Helpers
         private static Result<ObjectCreatorResult> CreateObjectCreatorDelegate(string typeName)
          => Result
             .Success(typeName)
-            .OnSuccessTry(typeName =>
+            .OnSuccessTry(tName => Type.GetType(tName), exception => exception?.Message ?? "Error")
+            .Ensure(t => t != null, "Class not found")
+            .OnSuccessTry(t =>
             {
-                var t = Type.GetType(typeName);
                 var ctor = t.GetConstructor(new Type[0]);
                 var methodName = $"{t.Name}Ctor";
                 var dm = new DynamicMethod(methodName, t, new Type[0], typeof(object).Module);
@@ -53,7 +54,7 @@ namespace dataneo.Helpers
                 return new ObjectCreatorResult
                 {
                     ObjectCreator = del,
-                    TypeName = typeName
+                    TypeName = t.Name
                 };
             }, exception => exception?.Message ?? "Error");
 
@@ -62,7 +63,7 @@ namespace dataneo.Helpers
             var obj = objectCreatorDelegate?.Invoke() as CType;
             return obj != null ?
                 Result.Success(obj) :
-                Result.Failure<CType>("Unable to create instance of object");
+                Result.Failure<CType>("Unable to create instance of an object");
         }
     }
 }
