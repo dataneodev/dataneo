@@ -59,11 +59,7 @@ namespace dataneo.Helpers
             }, exception => exception?.Message ?? "Error");
 
         private static Result<CType> GetObjectFromCreator<CType>(ObjectCreatorDelegate objectCreatorDelegate) where CType : class
-        {
-            var obj = objectCreatorDelegate?.Invoke() as CType;
-            return Result
-                .Success(obj)
-                .Ensure(obj => obj != null, "Unable to create instance of an object");
-        }
+            => Result.Try(objectCreatorDelegate?.Invoke() as CType)
+                     .Ensure(obj => obj != null, "Unable to create instance of an object");
     }
 }
