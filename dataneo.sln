@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.Extensions.Benchmar
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "dataneo.Helpers", "dataneo.Helpers\dataneo.Helpers.shproj", "{4DF445D2-6956-49C7-9B3A-4E7BEC477AB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataneo.HelpersTests", "Tests\dataneo.HelpersTests\dataneo.HelpersTests.csproj", "{E03150AF-7EFD-416F-86D3-5CB705AF19D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.HelpersTests", "Tests\dataneo.HelpersTests\dataneo.HelpersTests.csproj", "{E03150AF-7EFD-416F-86D3-5CB705AF19D8}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution

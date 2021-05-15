@@ -19,7 +19,11 @@ namespace dataneo.Extensions
             }
 
             var returnList = new List<T>(predictedCapacity);
-            returnList.AddRange(enumerable);
+
+            foreach (T item in enumerable)
+            {
+                returnList.Add(item);
+            }
 
             if (trimExcess && returnList.Count != returnList.Capacity)
             {

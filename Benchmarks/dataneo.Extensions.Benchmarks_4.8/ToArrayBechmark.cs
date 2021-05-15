@@ -1,17 +1,16 @@
 ﻿using BenchmarkDotNet.Attributes;
-using dataneo.Extensions;
+using BenchmarkDotNet.Jobs;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace dataneo.Extensions.Benchmarks
+namespace dataneo.Extensions.Benchmarks_4._8
 {
-
     //[SimpleJob(RuntimeMoniker.NetCoreApp50)]
-    //[SimpleJob(RuntimeMoniker.Net48)]
-    //[SimpleJob(RuntimeMoniker.NetCoreApp21)]
+    [SimpleJob(RuntimeMoniker.Net48)]
+    // [SimpleJob(RuntimeMoniker.NetCoreApp21)]
     [MemoryDiagnoser]
-    //[MarkdownExporterAttribute.GitHub]
-    //[HtmlExporter]
+    [MarkdownExporterAttribute.GitHub]
+    [HtmlExporter]
     public class ToArrayBechmark
     {
         [Params(10, 10000, 1000000)]
@@ -48,7 +47,7 @@ namespace dataneo.Extensions.Benchmarks
         {
             for (int i = 0; i < count; i++)
             {
-                yield return i + 2;
+                yield return i;
             }
         }
     }
