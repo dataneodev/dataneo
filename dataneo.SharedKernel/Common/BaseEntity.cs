@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace dataneo.SharedKernel
+﻿namespace dataneo.SharedKernel
 {
     public abstract class BaseEntity
     {
-        public virtual Guid Id { get; protected set; }
+        public virtual int Id { get; protected set; }
 
         public override bool Equals(object obj)
         {

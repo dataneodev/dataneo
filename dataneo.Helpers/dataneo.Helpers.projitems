@@ -9,6 +9,7 @@
     <Import_RootNamespace>dataneo.Helpers</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)ArrayHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ObjectCreator.cs" />
   </ItemGroup>
 </Project>
