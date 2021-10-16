@@ -9,6 +9,4 @@
     <PackageReference Include="BenchmarkDotNet" Version="0.12.1" />
   </ItemGroup>
 
-  <Import Project="..\..\dataneo.Extensions\dataneo.Extensions.projitems" Label="Shared" />
-
 </Project>

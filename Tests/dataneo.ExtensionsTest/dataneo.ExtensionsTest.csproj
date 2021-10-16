@@ -24,6 +24,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <Import Project="..\..\dataneo.Extensions\dataneo.Extensions.projitems" Label="Shared" />
-
 </Project>

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/dataneodev/dataneo</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dataneodev/dataneo/tree/master/dataneo.SharedKernel</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.Specification" Version="5.2.0" />
+    <PackageReference Include="CSharpFunctionalExtensions" Version="2.23.0" />
+  </ItemGroup>
+
+</Project>

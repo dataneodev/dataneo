@@ -63,7 +63,7 @@ namespace dataneo.Helpers
             var obj = objectCreatorDelegate?.Invoke() as CType;
             return Result
                 .Success(obj)
-                .Ensure(obj => obj != null, "Unable to create instance of an object");
+                .Ensure(@object => @object != null, "Unable to create instance of an object");
         }
     }
 }
