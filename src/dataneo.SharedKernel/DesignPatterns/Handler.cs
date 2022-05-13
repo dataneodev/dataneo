@@ -3,25 +3,25 @@ using System;
 
 namespace dataneo.SharedKernel
 {
-    public abstract class VerificationHandler<T>
+    public abstract class Handler<T>
     {
-        private VerificationHandler<T> Next;
+        private Handler<T> Next;
 
-        public Result Verify(T request)
+        public Result Handle(T request)
         {
-            var verifyResult = Verification(request);
+            var verifyResult = HandleRequest(request);
             if (verifyResult.IsFailure)
                 return verifyResult;
 
             if (this.Next != null)
-                return this.Next.Verification(request);
+                return this.Next.HandleRequest(request);
 
             return verifyResult;
         }
 
-        protected abstract Result Verification(T request);
+        protected abstract Result HandleRequest(T request);
 
-        public VerificationHandler<T> SetNext(VerificationHandler<T> nextVerificationHandler)
+        public Handler<T> SetNext(Handler<T> nextVerificationHandler)
         {
             if (nextVerificationHandler == null)
                 throw new ArgumentNullException(nameof(nextVerificationHandler));
