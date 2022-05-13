@@ -21,8 +21,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\dataneo.Helpers\dataneo.Helpers.csproj" />
-  </ItemGroup>
-
 </Project>

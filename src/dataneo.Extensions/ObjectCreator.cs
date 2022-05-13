@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection.Emit;
 
-namespace dataneo.Helpers
+namespace dataneo.Extensions
 {
     public static class ObjectCreator
     {

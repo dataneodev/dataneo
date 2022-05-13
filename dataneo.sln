@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31129.286
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}"
 EndProject
@@ -13,15 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmark", "Benchmark", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.Extensions.Benchmarks", "Benchmarks\dataneo.Extensions.Benchmarks\dataneo.Extensions.Benchmarks.csproj", "{662264FA-0DC7-4728-A710-AB52C6C66258}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.HelpersTests", "Tests\dataneo.HelpersTests\dataneo.HelpersTests.csproj", "{E03150AF-7EFD-416F-86D3-5CB705AF19D8}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{190FD7AF-B6A0-416C-8B2C-8F5120FAECA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataneo.Extensions", "src\dataneo.Extensions\dataneo.Extensions.csproj", "{184E64A0-80D0-4276-9995-FE609C32637D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.Extensions", "src\dataneo.Extensions\dataneo.Extensions.csproj", "{184E64A0-80D0-4276-9995-FE609C32637D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataneo.Helpers", "src\dataneo.Helpers\dataneo.Helpers.csproj", "{8D0C5B22-0890-4468-81DB-8B031C274FE7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataneo.SharedKernel", "src\dataneo.SharedKernel\dataneo.SharedKernel.csproj", "{C8D87A69-1182-41B6-8563-F0E31E26260C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "dataneo.SharedKernel", "src\dataneo.SharedKernel\dataneo.SharedKernel.csproj", "{C8D87A69-1182-41B6-8563-F0E31E26260C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,18 +37,10 @@ Global
 		{662264FA-0DC7-4728-A710-AB52C6C66258}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{662264FA-0DC7-4728-A710-AB52C6C66258}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{662264FA-0DC7-4728-A710-AB52C6C66258}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E03150AF-7EFD-416F-86D3-5CB705AF19D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E03150AF-7EFD-416F-86D3-5CB705AF19D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E03150AF-7EFD-416F-86D3-5CB705AF19D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E03150AF-7EFD-416F-86D3-5CB705AF19D8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{184E64A0-80D0-4276-9995-FE609C32637D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{184E64A0-80D0-4276-9995-FE609C32637D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{184E64A0-80D0-4276-9995-FE609C32637D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{184E64A0-80D0-4276-9995-FE609C32637D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D0C5B22-0890-4468-81DB-8B031C274FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D0C5B22-0890-4468-81DB-8B031C274FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D0C5B22-0890-4468-81DB-8B031C274FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D0C5B22-0890-4468-81DB-8B031C274FE7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C8D87A69-1182-41B6-8563-F0E31E26260C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C8D87A69-1182-41B6-8563-F0E31E26260C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D87A69-1182-41B6-8563-F0E31E26260C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -65,9 +53,7 @@ Global
 		{7B811A0A-288E-4929-9A6F-8ECF4718ADA6} = {34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}
 		{71148870-FE5A-4813-B7BA-7915AAE21E34} = {34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}
 		{662264FA-0DC7-4728-A710-AB52C6C66258} = {59BE2D38-86A3-4B81-8E84-46CCCBF9885C}
-		{E03150AF-7EFD-416F-86D3-5CB705AF19D8} = {34BF79CC-7A16-4795-9A7B-5BF549D8E1D3}
 		{184E64A0-80D0-4276-9995-FE609C32637D} = {190FD7AF-B6A0-416C-8B2C-8F5120FAECA9}
-		{8D0C5B22-0890-4468-81DB-8B031C274FE7} = {190FD7AF-B6A0-416C-8B2C-8F5120FAECA9}
 		{C8D87A69-1182-41B6-8563-F0E31E26260C} = {190FD7AF-B6A0-416C-8B2C-8F5120FAECA9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

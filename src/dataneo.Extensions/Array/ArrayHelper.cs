@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace dataneo.Helpers
+namespace dataneo.Extensions
 {
     public static class ArrayHelper
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace dataneo.Extensions
 {
-    public static class IEnumerableExtension
+    public static class IEnumerableToList
     {
         public static List<T> ToList<T>(this IEnumerable<T> enumerable, int predictedCapacity, bool trimExcess = false)
         {
