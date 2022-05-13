@@ -21,8 +21,6 @@ namespace dataneo.Extensions
             this._fromSingleEnumerator = new FromSingleEnumerator<T>(value);
         }
 
-
-
         public IEnumerator<T> GetEnumerator() => _fromSingleEnumerator;
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
