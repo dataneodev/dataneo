@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace dataneo.Extensions
 {
+    public static class FromSingleIEnumerable
+    {
+        public static FromSingleIEnumerable<T> Get<T>(T value) => new FromSingleIEnumerable<T>(value);
+    }
+
     public readonly struct FromSingleIEnumerable<T> : IEnumerable<T>
     {
         private readonly FromSingleEnumerator<T> _fromSingleEnumerator;
@@ -16,24 +21,26 @@ namespace dataneo.Extensions
             this._fromSingleEnumerator = new FromSingleEnumerator<T>(value);
         }
 
+
+
         public IEnumerator<T> GetEnumerator() => _fromSingleEnumerator;
 
         IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
-        private struct FromSingleEnumerator<T> : IEnumerator<T>
+        private struct FromSingleEnumerator<Tin> : IEnumerator<Tin>
         {
-            private readonly T _value;
+            private readonly Tin _value;
             private readonly bool _valueSet;
             private bool firstIncrement;
 
-            public FromSingleEnumerator(T value)
+            public FromSingleEnumerator(Tin value)
             {
                 this._value = value;
                 this._valueSet = true;
                 this.firstIncrement = false;
             }
 
-            public T Current => this._value;
+            public Tin Current => this._value;
             object IEnumerator.Current => this._value;
 
             public void Dispose() { }
@@ -53,6 +60,4 @@ namespace dataneo.Extensions
             }
         }
     }
-
-
 }

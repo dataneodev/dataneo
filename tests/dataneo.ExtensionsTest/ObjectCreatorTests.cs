@@ -1,10 +1,10 @@
-﻿using dataneo.Helpers;
+﻿using dataneo.Extensions;
 using FluentAssertions;
 using FluentAssertions.CSharpFunctionalExtensions;
 using System.Text;
 using Xunit;
 
-namespace dataneo.HelpersTests
+namespace dataneo.Extension
 {
     public class TestClassForObjectCreator { }
 
