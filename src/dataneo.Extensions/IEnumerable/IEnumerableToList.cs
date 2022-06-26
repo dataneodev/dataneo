@@ -5,7 +5,7 @@ namespace dataneo.Extensions
 {
     public static class IEnumerableToList
     {
-        public static List<T> ToList<T>(this IEnumerable<T> enumerable, int predictedCapacity, bool trimExcess = false)
+        public static List<TSource> ToList<TSource>(this IEnumerable<TSource> enumerable, int predictedCapacity, bool trimExcess = false)
         {
             if (enumerable == null)
                 throw new ArgumentNullException(nameof(enumerable));
@@ -13,14 +13,14 @@ namespace dataneo.Extensions
             if (predictedCapacity < 0)
                 throw new ArgumentOutOfRangeException("predictedCapacity < 0");
 
-            if (enumerable is ICollection<T> collection)
+            if (enumerable is ICollection<TSource> collection)
             {
                 predictedCapacity = collection.Count;
             }
 
-            var returnList = new List<T>(predictedCapacity);
+            var returnList = new List<TSource>(predictedCapacity);
 
-            foreach (T item in enumerable)
+            foreach (TSource item in enumerable)
             {
                 returnList.Add(item);
             }

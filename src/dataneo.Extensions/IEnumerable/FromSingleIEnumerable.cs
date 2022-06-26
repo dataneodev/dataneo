@@ -9,7 +9,7 @@ namespace dataneo.Extensions
 {
     public static class FromSingleIEnumerable
     {
-        public static FromSingleIEnumerable<T> Get<T>(T value) => new FromSingleIEnumerable<T>(value);
+        public static FromSingleIEnumerable<TSource> Get<TSource>(TSource value) => new FromSingleIEnumerable<TSource>(value);
     }
 
     public readonly struct FromSingleIEnumerable<T> : IEnumerable<T>

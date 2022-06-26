@@ -5,7 +5,7 @@ namespace dataneo.Extensions
 {
     public static class IEnumerableExtensionToArray
     {
-        public static T[] ToArray<T>(this IEnumerable<T> source, int predictedCapacity)
+        public static TSource[] ToArray<TSource>(this IEnumerable<TSource> source, int predictedCapacity)
         {
             if (source == null)
                 throw new ArgumentNullException(nameof(source));
@@ -13,20 +13,20 @@ namespace dataneo.Extensions
             if (predictedCapacity < 0)
                 throw new ArgumentOutOfRangeException("predictedCapacity < 0");
 
-            if (source is ICollection<T> collection)
+            if (source is ICollection<TSource> collection)
             {
                 int count = collection.Count;
                 if (count == 0)
                 {
-                    return Array.Empty<T>();
+                    return Array.Empty<TSource>();
                 }
 
-                var result = new T[count];
+                var result = new TSource[count];
                 collection.CopyTo(result, arrayIndex: 0);
                 return result;
             }
 
-            var returnArray = new T[Math.Max(predictedCapacity, 4)];
+            var returnArray = new TSource[Math.Max(predictedCapacity, 4)];
 
             int itemIndex = 0;
             foreach (var item in source)
